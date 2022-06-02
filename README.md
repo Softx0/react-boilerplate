@@ -2,3 +2,5 @@
 
 
 ## Persiguiendo clean architecture
+
+Pendiente por documentar...
