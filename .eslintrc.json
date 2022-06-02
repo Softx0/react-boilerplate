@@ -1,0 +1,43 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:react/jsx-runtime",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:jsx-a11y/recommended",
+        "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "eslint-plugin-react-hooks",
+        "prettier",
+        "jsx-a11y",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "prettier/prettier": "warn",
+        "no-undef": 0,
+        "react-hooks/exhaustive-deps": 0,
+        "react/prop-types": 0,
+        "no-unused-vars": ["error", { "varsIgnorePattern": "_.*" }],
+        "no-inline-comments": "error",
+        "curly": "error",
+        "jsx-a11y/img-redundant-alt": [ 2, {
+            "components": [ "Image" ],
+            "words": [ "Foto" ]
+          }]
+    }
+}
