@@ -28,13 +28,14 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "prettier/prettier": "warn",
         "no-undef": 0,
-        "react-hooks/exhaustive-deps": 0,
-        "react/prop-types": 0,
-        "no-unused-vars": ["error", { "varsIgnorePattern": "_.*" }],
-        "no-inline-comments": "error",
         "curly": "error",
+        "react/prop-types": 0,
+        "semi": ["error", "always"],
+        "prettier/prettier": "warn",
+        "no-inline-comments": "error",
+        "react-hooks/exhaustive-deps": 0,
+        "no-unused-vars": ["error", { "varsIgnorePattern": "_.*" }],
         "jsx-a11y/img-redundant-alt": [ 2, {
             "components": [ "Image" ],
             "words": [ "Foto" ]
