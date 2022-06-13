@@ -1,4 +1,4 @@
 
-export default const IPersona = () => {
+export const IPersona = () => {
  
 };
