@@ -40,3 +40,7 @@ En *Clean Architecture*, una aplicación se divide en responsabilidades y cada u
 Se basa en que la capa de dominio no dependa de ninguna capa exterior. 
 La de aplicación sólo depende de la de dominio y el resto (normalmente presentación y acceso a datos) depende de la capa de aplicación. 
 Esto se logra con la implementación de interfaces que luego tendrán que implementar las capas externas mediante la inyección de dependencias.
+
+El siguiente diagrama representa la adaptación hecha de Clean Architecture para un proyecto Frontend basado en Typescrit y React
+
+![CleanArchitectureReact](uploads/6f5d785985da851acf0df25b1c3e4081/CleanArchitectureReact.png)
