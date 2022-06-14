@@ -1,14 +1,8 @@
 import React from 'react'
 
-type Props = {}
 
-const Persona = (props: Props) => {
-  return (
-    <div>Persona</div>
-  )
-}
+const Persona = () => {
+    return <div>Persona</div>;
+};
 
-
-
-
-export default Persona
+export default Persona;
