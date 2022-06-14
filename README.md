@@ -43,4 +43,4 @@ Esto se logra con la implementación de interfaces que luego tendrán que implem
 
 El siguiente diagrama representa la adaptación hecha de Clean Architecture para un proyecto Frontend basado en Typescrit y React
 
-![CleanArchitectureReact](http://hudkregister.humano.local/canales-digitales/documentacion/-/wikis/uploads/6f5d785985da851acf0df25b1c3e4081/CleanArchitectureReact.png)
+![CleanArchitectureReact](http://hudkregister.humano.local/canales-digitales/documentacion/-/wikis/uploads/d7c040e0a3f5e1a657fbdaef4a6b1d4e/CleanArchitectureReact.svg)
