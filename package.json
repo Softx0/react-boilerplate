@@ -58,10 +58,5 @@
     "onchange": "^7.1.0",
     "prettier": "2.6.2",
     "react-test-renderer": "18.1.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run prettier-format && npm run lint"
-    }
   }
 }
