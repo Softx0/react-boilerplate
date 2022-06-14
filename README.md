@@ -74,6 +74,8 @@ El siguiente diagrama representa la adaptación hecha de Clean Architecture para
 
 ### Patrones y metodologías utilizadas:
 
-    - **Axios:** Para el consumo de servicios en la capa de Servicios Externos
-    - **Pruebas unitarias: ** Se debe utilizar jest asi como react-testing-library
+
+*  **Axios**: Para el consumo de servicios en la capa de Servicios Externos
+
+*  **Pruebas unitarias**: Se debe utilizar jest asi como react-testing-library
 
