@@ -3,4 +3,3 @@
 
 npm run prettier-format
 npm run lint
-npm run lint-and-fix
