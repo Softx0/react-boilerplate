@@ -1,8 +1,13 @@
 import React from 'react'
 
+let x = 4;
 
 const Persona = () => {
-    return <div>Persona</div>;
-};
+    
+   <div>Persona</div>
 
-export default Persona;
+}
+
+
+
+export default Persona
