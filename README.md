@@ -17,8 +17,11 @@ Proyecto con la estructura inicial para todos los proyectos basados en React.js
 1. Clonar el repositorio
 2. Crear archivo `.env` con las variables especificadas en el `.env.sample` 
 3. Para correrlo sin docker:
+
    3.1. Situarse en la raiz del proyecto, proceder a instalar las dependencias con `yarn install`
+   
    3.2. Ejecutar `yarn start`
+   
 4. Para correrlo con docker:
     4.1. Construimos la imagen 
     ```
