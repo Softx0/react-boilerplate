@@ -16,7 +16,7 @@ build_env_develop:
     - chmod +x ./setup_env.sh
     - ./setup_env.sh DEV
 
-    - docker build -t hudkregister.humano.local:5005/NAME:$TAG_IMAGE_DEV -f Dockerfile .
+    - docker build -t IMAGE_NAME:$TAG_IMAGE_DEV -f Dockerfile .
   tags:
     - NAME-frontend-develop
   only:
@@ -28,7 +28,7 @@ deploy_env_develop:
     GIT_STRATEGY: none
   stage: deploy
   script:
-    - docker push hudkregister.humano.local:5005/NAME:$TAG_IMAGE_DEV
+    - docker push IMAGE_NAME:$TAG_IMAGE_DEV
     - docker-compose -f docker-compose.yml up -d
   tags:
     - NAME-frontend-develop
@@ -42,8 +42,8 @@ build_env_qa:
     - chmod +x ./setup_env.sh
     - ./setup_env.sh QA
 
-    - docker build -t hudkregister.humano.local:5005/NAME:$TAG_IMAGE_QA -f Dockerfile.STG .
-    - docker build -t hudkregister.humano.local:5005/NAME:$CI_COMMIT_SHORT_SHA -f Dockerfile.STG .
+    - docker build -t IMAGE_NAME:$TAG_IMAGE_QA -f Dockerfile .
+    - docker build -t IMAGE_NAME:$CI_COMMIT_SHORT_SHA -f Dockerfile .
   tags:
     - NAME-frontend-qa
   only:
@@ -55,8 +55,8 @@ deploy_env_qa:
     GIT_STRATEGY: none
   stage: deploy
   script:
-    - docker push hudkregister.humano.local:5005/NAME:$TAG_IMAGE_QA
-    - docker push hudkregister.humano.local:5005/NAME:$CI_COMMIT_SHORT_SHA
+    - docker push IMAGE_NAME:$TAG_IMAGE_QA
+    - docker push IMAGE_NAME:$CI_COMMIT_SHORT_SHA
 
     - docker-compose -f docker-compose.yml up -d
   tags:
@@ -71,8 +71,8 @@ build_env_prod:
     - chmod +x ./setup_env.sh
     - ./setup_env.sh PROD
 
-    - docker build -t hudkregister.humano.local:5005/NAME:$TAG_IMAGE_PROD .
-    - docker build -t hudkregister.humano.local:5005/NAME:$CI_COMMIT_SHORT_SHA .
+    - docker build -t IMAGE_NAME:$TAG_IMAGE_PROD .
+    - docker build -t IMAGE_NAME:$CI_COMMIT_SHORT_SHA .
   artifacts:
     expire_in: 1 hour
     paths:
@@ -88,8 +88,8 @@ deploy_env_prod:
     GIT_STRATEGY: none
   stage: deploy
   script:
-    - docker push hudkregister.humano.local:5005/NAME:$TAG_IMAGE_PROD
-    - docker push hudkregister.humano.local:5005/NAME:$CI_COMMIT_SHORT_SHA
+    - docker push IMAGE_NAME:$TAG_IMAGE_PROD
+    - docker push IMAGE_NAME:$CI_COMMIT_SHORT_SHA
 
     - docker-compose -f docker-compose.yml up -d
   tags:
