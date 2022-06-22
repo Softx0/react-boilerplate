@@ -80,7 +80,7 @@ build_env_prod:
   tags:
     - NAME-frontend-production
   only:
-    - master
+    - main
 
 #### DEPLOY PROD ####
 deploy_env_prod:
@@ -95,4 +95,4 @@ deploy_env_prod:
   tags:
     - NAME-frontend-production
   only:
-    - master
+    - main

@@ -25,7 +25,6 @@
     "plugins": [
         "react",
         "eslint-plugin-react-hooks",
-        // "eslint-plugin-prettier",
         "jsx-a11y",
         "@typescript-eslint",
         "prettier"
@@ -43,6 +42,8 @@
         "jsx-a11y/img-redundant-alt": [ 2, {
             "components": [ "Image" ],
             "words": [ "Foto" ]
-          }]
+          }],
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error"
     }
 }
