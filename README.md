@@ -77,11 +77,9 @@ El siguiente diagrama representa la adaptación hecha de Clean Architecture para
     - **context**: cualquier recurso que se necesite para manejar el state dentro de un alcance definido y que no sera necesario en toda la aplicación en todo momento.
     - **redux**: información que se necesita en toda la aplicación en todo momento. 
 
-
 ### Patrones y metodologías utilizadas:
 
 
 *  **Axios**: Para el consumo de servicios en la capa de Servicios Externos
 
 *  **Pruebas unitarias**: Se debe utilizar jest asi como react-testing-library
-
