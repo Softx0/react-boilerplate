@@ -33,6 +33,10 @@ Proyecto con la estructura inicial para todos los proyectos basados en React.js
     ```
 5. Abrir el browser y dirigirse a `localhost:3000`
 
+### Consideraciones para el CI-CD
+
+Como se presenta en el `Dockerfile`, se debe tener en cuenta antes de emitir un lanzamiento hacia el CI se debe de con antelación crear el archivo yarn.lock localmente. Esto con el objetivo de optimizar el despliegue y liberación del proyecto en el servidor, así como también que el motivo es que a nivel del Dockerfile se esta utilizando el comando `yarn install --frozen-lockfile` buscando mejorar el rendimiento del pipeline. 
+
 
 ## Arquitectura
 
