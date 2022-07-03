@@ -5,8 +5,9 @@ ENV NODE_ENV ${ENV}
 WORKDIR /app
 # Cache and Install dependencies
 COPY package.json .
-# COPY yarn.lock .
-RUN yarn install
+COPY yarn.lock .
+
+RUN yarn install --frozen-lockfile
 # Copy app files
 COPY . .
 # Build the app

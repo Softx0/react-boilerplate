@@ -1,7 +1,7 @@
 version: "3.7"
 services:
   web:
-    image: hudkregister.humano.local:5005/container_name:$TAG_IMAGE
+    image: IMAGE_NAME:$TAG_IMAGE
     container_name: CONTAINER_NAME
     build:
       context: Dockerfile

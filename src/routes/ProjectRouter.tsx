@@ -1,7 +1,5 @@
 const ProjectRouter = () => {
-  return (
-    <div>ProjectRouter</div>
-  )
-}
+    return <div>ProjectRouter</div>;
+};
 
-export default ProjectRouter
+export default ProjectRouter;
